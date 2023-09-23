@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 
 # Load the HDF5 model
-model = tf.keras.models.load_model('./model/model.hdf5')
+model = tf.keras.models.load_model('./model/xgboost_model.h5')
 
 # Define a Streamlit route for predictions
 @st.route('/predict', methods=['POST'])
